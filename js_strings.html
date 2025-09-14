@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>JavaScript Strings</h1>
+
+<p id="demo"></p>
+
+<script>
+let text = "John Doe";  // String written inside quotes
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<h1>JavaScript Strings</h1>
+<p>Strings are written inside quotes. You can use single or double quotes:</p>
+
+<p id="demoquotes"></p>
+
+<script>
+let carName1 = "Volvo XC60"; // Double quotes
+let carName2 = 'Volvo XC60'; // Single quotes
+
+document.getElementById("demoquotes").innerHTML =
+carName1 + " " + carName2; 
+</script>
+
+<h1>JavaScript Strings</h1>
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+
+<p id="demoinside"></p>
+
+<script>
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"'; 
+
+document.getElementById("demoinside").innerHTML =
+answer1 + "<br>" + answer2 + "<br>" + answer3; 
+</script>
+
+<h1>JavaScript Template Strings</h1>
+<p>With back-ticks, you can use both single and double quotes inside a string:</p>
+
+<p id="demotemplate"></p>
+
+<script>
+let text1 = `He's often called "Johnny"`;
+document.getElementById("demotemplate").innerHTML = text1;
+</script>
+
+<h1>JavaScript Strings</h1>
+<h2>The length Property</h2>
+
+<p>The length of the string is:</p>
+<p id="demolength"></p>
+
+<script>
+let text2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demolength").innerHTML = text2.length;
+</script>
+
+<h1>JavaScript Strings</h1>
+
+<p>The escape sequence \" inserts a double quote in a string.</p>
+
+<p id="demoescape"></p>
+
+<script>
+let text3 = "We are the so-called \"Vikings\" from the north.";
+document.getElementById("demoescape").innerHTML = text3; 
+</script>
+
+<h1>JavaScript Strings</h1>
+
+<p>The escape sequence \' inserts a single quote in a string.</p>
+
+<p id="demoin"></p>
+
+<script>
+let text4 = 'It\'s alright.';
+document.getElementById("demoin").innerHTML = text4; 
+</script>
+
+<h1>JavaScript Strings</h1>
+
+<p>The escape sequence \\ inserts a backslash in a string.</p>
+
+<p id="demoback"></p>
+
+<script>
+let text5 = "The character \\ is called backslash.";
+document.getElementById("demoback").innerHTML = text5; 
+</script>
+
+<h1>JavaScript Statements</h1>
+
+<p>The best place to break a code line is after an operator or a comma.</p>
+
+<p id="demobreak"></p>
+
+<script>
+document.getElementById("demobreak").innerHTML =
+"Hello Dolly!";
+</script>
+
+<h1>JavaScript Strings</h1>
+
+<p>The safest way to break a code line in a string is using string addition.</p>
+
+<p id="demoway"></p>
+
+<script>
+document.getElementById("demoway").innerHTML = "Hello " +
+"Dolly!";
+</script>
+
+<h1>JavaScript Template Strings</h1>
+<h2>Multiline Strings</h2>
+
+<p id="demomulti"></p>
+
+<script>
+let text6 =
+
+`The quick
+brown fox
+jumps over
+the lazy dog`;
+
+document.getElementById("demomulti").innerHTML = text6;
+</script>
+
+<h1>JavaScript Strings</h1>
+
+<p id="demotwo"></p>
+
+<script>
+// x is a string
+let x = "John";
+
+// y is an object
+let y = new String("John");
+
+document.getElementById("demotwo").innerHTML =
+typeof x + "<br>" + typeof y;
+</script>
+
+<h2>Never Create Strings as Objects</h2>
+<p>Strings and objects cannot be safely compared.</p>
+
+<p id="demonever"></p>
+
+<script>
+let k = "John";        // x is a string
+let l = new String("John");  // y is an object
+document.getElementById("demonever").innerHTML = (k==l);
+</script>
+
+<h2>Never Create Strings as Objects</h2>
+<p>Strings and objects cannot be safely compared.</p>
+
+<p id="democreate"></p>
+
+<script>
+let m = "John";        // x is a string
+let n = new String("John");  // y is an object
+document.getElementById("democreate").innerHTML = (m===n);
+</script>
+
+<h2>Never Create Strings as Objects</h2>
+<p>JavaScript objects cannot be compared.</p>
+
+<p id="demoob"></p>
+
+<script>
+let c = new String("John");  // x is an object
+let d = new String("John");  // y is an object
+document.getElementById("demoob").innerHTML = (c==d);
+</script>
+
+<h2>Never Create Strings as Objects</h2>
+<p>JavaScript objects cannot be compared.</p>
+
+<p id="democom"></p>
+
+<script>
+let p = new String("John");  // x is an object
+let s = new String("John");  // y is an object
+document.getElementById("democom").innerHTML = (p===s);
+</script>
+
+</body>
+</html>
